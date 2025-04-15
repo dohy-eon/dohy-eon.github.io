@@ -9,13 +9,13 @@
     :root {
       --bg: #ffffff;
       --text: #1a1a1a;
-      --accent: #3b82f6;
+      --accent: #d0d0d0;
       --card-bg: #f5f5f5;
     }
     
     [data-theme="dark"] {
       --bg: #1e1e1e;
-      --text: #e0e0e0;
+      --text: #17171B;
       --accent: #60a5fa;
       --card-bg: #2b2b2b;
     }
@@ -62,20 +62,28 @@
       border-bottom: 1px solid #ddd;
     }
 
+    .profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    }
+
     .profile-img {
-      width: 150px;
-      border-radius: 5%;
-      margin-top: 1rem;
+    width: 150px;
+    border-radius: 5%;
+    margin-bottom: 1rem;
     }
 
     .resume-btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: var(--accent);
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
     }
 
     .toggle-theme {
@@ -124,16 +132,18 @@
     </nav>
   </aside>
 
-  <header>
-    <h1>최도현 | 프론트엔드 개발자</h1>
-    <p>사용자 경험 중심의 직관적이고 완성도 높은 인터페이스를 구현합니다.</p>
+<header>
+  <h1>최도현 | 프론트엔드 개발자</h1>
+  <p>사용자 경험 중심의 직관적이고 완성도 높은 인터페이스를 구현합니다.</p>
+  <div class="profile-wrapper">
     <img src="assets/images/profile.jpg" alt="프로필 사진" class="profile-img" />
     <a
       href="https://rose-tray-606.notion.site/10e7ae28f6ba802a9629c134d6eb4828?pvs=74"
       target="_blank"
       class="resume-btn"
     >📄 이력서 보기</a>
-  </header>
+  </div>
+</header>
 
   <section id="profile">
     <h2>📌 프로필</h2>
